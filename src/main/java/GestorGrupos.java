@@ -4,8 +4,11 @@ import java.util.Arrays;
 
 public class GestorGrupos {
     public int[][] dividir_lista(int[] elementos, float fraccion){
-        if(elementos == null || elementos.length == 0){
-            throw new IllegalArgumentException();
+        if(elementos == null ){
+            throw new IllegalArgumentException("elementos es nulo");
+        }
+        if(elementos.length == 0){
+            throw new IllegalArgumentException("la longitud de elementos es 0");
         }
         if(fraccion > 1.0f || fraccion<0.0f){
             throw new IllegalArgumentException("La fracción esta fuera de rango");
