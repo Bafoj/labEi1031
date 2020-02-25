@@ -3,10 +3,10 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class GestorGruposPruebasExcepciones {
-    private static GestorGrupos gestorGrupos;
+    private static GestorGruposStub gestorGrupos;
     @Before
     public void creaGestorGrupos(){
-        gestorGrupos=new GestorGrupos();
+        gestorGrupos=new GestorGruposStub();
     }
     @After
     public void eliminaGestorGrupos(){
